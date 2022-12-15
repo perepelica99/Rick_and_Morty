@@ -6,12 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.rick_and_morty.R
-import com.example.rick_and_morty.databinding.CharactersFragmentBinding
+
+import com.example.rick_and_morty.databinding.FragmentCharactersBinding
 import com.example.rick_and_morty.ui.adapters.CharactersAdapter
 
 class CharactersFragment : Fragment() {
 
-    private lateinit var binding: CharactersFragmentBinding
+    private lateinit var binding: FragmentCharactersBinding
     private var charactersAdapter: CharactersAdapter = CharactersAdapter()
 
     private var params: MutableMap<String, String?> = mutableMapOf(
@@ -27,6 +28,6 @@ class CharactersFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.characters_fragment,container,false)
+        return inflater.inflate(R.layout.fragment_characters,container,false)
     }
 }

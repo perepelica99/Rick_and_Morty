@@ -176,7 +176,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:spanCount="1"
-        tools:listitem="@layout/episodes_with_character"
+        tools:listitem="@layout/item_episodes_with_character"
         tools:orientation="vertical" />
 
     <ProgressBar
