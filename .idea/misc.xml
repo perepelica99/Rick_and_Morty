@@ -7,6 +7,7 @@
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_back.xml" value="0.151" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_characters.xml" value="0.121" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_episode.xml" value="0.121" />
+        <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_filter.xml" value="0.104" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_loading.xml" value="0.1235" />
@@ -17,7 +18,11 @@
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/character_details.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/characters_fragment.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/episodes_with_character.xml" value="0.264" />
+        <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/fragment_characters_filter.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/item_character.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/item_locations.xml" value="0.264" />
+        <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/location_details_fragment.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/layout/location_fragment.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/pizza/AndroidStudioProjects/Rick_and_Morty/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1453125" />
       </map>
     </option>

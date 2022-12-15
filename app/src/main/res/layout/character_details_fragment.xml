@@ -9,6 +9,7 @@
     tools:context=".ui.characters.CharacterDetailsFragment">
 
 
+
     <ImageButton
         android:id="@+id/back_btn"
         android:layout_width="50dp"
