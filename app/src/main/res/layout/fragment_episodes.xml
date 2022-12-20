@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_bg"
-    tools:context="data.episodes.EpisodesFragment">
+    android:background="@color/splash_screen"
+    tools:context=".presentation.screens.episodes.episodes_fragment.EpisodesFragment">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/search_episodes"
@@ -27,7 +27,7 @@
         android:layout_height="@dimen/filter_btn_size"
         android:layout_marginTop="@dimen/distance_vertical"
         android:layout_marginEnd="@dimen/distance_vertical"
-        android:background="@drawable/background_search"
+        android:background="@drawable/filter_btn_background"
         android:src="@drawable/ic_filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,7 @@
         android:layout_marginStart="@dimen/distance_vertical"
         android:layout_marginTop="@dimen/distance_vertical"
         android:text="@string/episodes"
-        android:textColor="@color/green_1"
+        android:textColor="@color/white_yellow"
         android:textSize="@dimen/label_size"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         android:layout_marginTop="@dimen/distance_vertical"
         android:layout_marginEnd="@dimen/distance_vertical"
         android:text="@string/reset"
-        android:textColor="@color/green_2"
+        android:textColor="@color/white_blue"
         android:textSize="@dimen/label_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_filter_episodes" />
@@ -66,23 +66,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/episodes_label">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_episodes"
-            android:layout_width="@dimen/zero"
-            android:layout_height="@dimen/zero"
-            android:layout_marginStart="@dimen/distance_horizontal"
-            android:layout_marginTop="@dimen/distance_vertical"
-            android:layout_marginEnd="@dimen/distance_horizontal"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/episodes_label"
-            app:layout_constraintVertical_bias="0.0"
-            app:spanCount="2"
-            tools:listitem="@layout/item_episode"
-            tools:orientation="vertical" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_episodes"
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/zero"
+        android:layout_marginStart="@dimen/distance_horizontal"
+        android:layout_marginTop="@dimen/distance_vertical"
+        android:layout_marginEnd="@dimen/distance_horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/episodes_label"
+        app:layout_constraintVertical_bias="0.0"
+        app:spanCount="2"
+        tools:listitem="@layout/item_episodes"
+        tools:orientation="vertical" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
-        android:indeterminateTint="@color/white"
+        android:indeterminateTint="@color/yellow"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/swipe_refresh_episodes"
         app:layout_constraintEnd_toEndOf="@+id/swipe_refresh_episodes"

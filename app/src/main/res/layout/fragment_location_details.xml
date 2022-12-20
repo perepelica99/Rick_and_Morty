@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green_bg"
-    tools:context="data.locations.LocationDetailsFragment">
+    android:background="@color/splash_screen"
+    tools:context=".presentation.screens.locations.location_details_fragment.LocationDetailsFragment">
 
     <ImageButton
         android:id="@+id/back_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:background="@drawable/ic_circle"
+        android:background="@drawable/round_button"
         android:gravity="center_vertical|center_horizontal"
-        android:src="@drawable/ic_back"
+        android:src="@drawable/btn_back"
         android:textColor="#fff"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/empty"
-        android:textColor="@color/white"
+        android:textColor="@color/light_pink"
         android:textSize="@dimen/planet_name_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/distance_between_text"
         android:text="@string/empty"
-        android:textColor="@color/green_1"
+        android:textColor="@color/light_pink"
         android:textSize="@dimen/item_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/distance_between_text"
         android:text="@string/empty"
-        android:textColor="@color/green_1"
+        android:textColor="@color/light_pink"
         android:textSize="@dimen/item_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/distance_horizontal"
         android:text="@string/residents"
-        android:textColor="@color/green_1"
+        android:textColor="@color/light_pink"
         android:textSize="@dimen/label_size"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -94,7 +93,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2"
         app:layout_constraintVertical_bias="0.0"
         app:spanCount="2"
-        tools:listitem="@layout/item_character"
+        tools:listitem="@layout/item_characters"
         tools:orientation="vertical" />
 
     <ProgressBar
@@ -103,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
-        android:indeterminateTint="@color/white"
+        android:indeterminateTint="@color/yellow"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/rv_location_detail"
         app:layout_constraintEnd_toEndOf="@+id/rv_location_detail"
