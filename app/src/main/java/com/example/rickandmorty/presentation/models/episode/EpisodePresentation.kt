@@ -1,8 +1,5 @@
 package com.example.rickandmorty.presentation.models.episode
 
-import kotlinx.android.parcel.Parcelize
-
-
 data class EpisodePresentation(
     val id: Int,
     val name: String,

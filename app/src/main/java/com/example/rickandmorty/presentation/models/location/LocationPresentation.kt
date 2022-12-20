@@ -1,7 +1,5 @@
 package com.example.rickandmorty.presentation.models.location
 
-import kotlinx.android.parcel.Parcelize
-
 data class LocationPresentation(
     val id: Int,
     val name: String,

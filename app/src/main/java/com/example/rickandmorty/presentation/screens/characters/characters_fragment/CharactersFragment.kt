@@ -18,7 +18,6 @@ import com.example.rickandmorty.databinding.FragmentCharactersBinding
 import com.example.rickandmorty.di.App
 import com.example.rickandmorty.presentation.adapters.characters_adapter.CharactersAdapter
 import com.example.rickandmorty.presentation.navigator
-import kotlinx.android.synthetic.main.fragment_characters.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.collectLatest
