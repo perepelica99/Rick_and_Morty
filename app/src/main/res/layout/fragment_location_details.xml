@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green_bg"
-    tools:context="ui.locations.LocationDetailsFragment">
+    tools:context="data.locations.LocationDetailsFragment">
 
     <ImageButton
         android:id="@+id/back_btn"

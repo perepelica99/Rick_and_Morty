@@ -1,26 +1,25 @@
-package com.example.rick_and_morty.ui.adapters
+package com.example.rick_and_morty.data.adapters
 
 
 import android.content.Context
-import android.os.Message
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.IntRange
-import androidx.recyclerview.widget.DiffUtil
 import androidx.paging.PagingDataAdapter
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.rick_and_morty.R
 import com.example.rick_and_morty.databinding.ItemCharacterBinding
-import com.example.rick_and_morty.ui.adapters.CharactersAdapter.CharactersViewHolder
-import com.example.rick_and_morty.ui.models.CharacterPresentation
+import com.example.rick_and_morty.data.adapters.CharactersAdapter.CharactersViewHolder
+import com.example.rick_and_morty.data.models.CharacterPresentation
+import com.example.rick_and_morty.data.models.CharactersModel
 
 
-class CharactersAdapter : RecyclerView.Adapter<CharactersViewHolder>() {
+class CharactersAdapter : PagingDataAdapter<CharacterPresentation, CharactersViewHolder>(CharactersDiffCallback()) {
 
-    private var onCharacterItem: ((CharacterPresentation) -> Unit)? = null
+     var onCharacterItem: ((CharacterPresentation) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
         val context: Context = parent.context
@@ -31,14 +30,12 @@ class CharactersAdapter : RecyclerView.Adapter<CharactersViewHolder>() {
 
     override fun onBindViewHolder(holderContacts: CharactersViewHolder, position: Int) {
 
-
-     /*   getItem(position)?.let { holderContacts.bind(it) }
+       getItem(position)?.let { holderContacts.bind(it) }
         holderContacts.itemView.setOnClickListener {
            onCharacterItem?.invoke(getItem(position)!!)
-        }*/
+        }
 
     }
-
 
     override fun getItemCount(): Int {
         TODO("Not yet implemented")

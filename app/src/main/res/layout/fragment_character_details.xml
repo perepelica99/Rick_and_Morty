@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green_3"
-    tools:context=".ui.characters.CharacterDetailsFragment">
+    tools:context=".data.characters.CharacterDetailsFragment">
 
 
 

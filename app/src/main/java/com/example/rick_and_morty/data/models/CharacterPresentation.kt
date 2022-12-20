@@ -1,4 +1,6 @@
-package com.example.rick_and_morty.ui.models
+package com.example.rick_and_morty.data.models
+
+
 
 data class CharacterPresentation(
     val id: Int,
