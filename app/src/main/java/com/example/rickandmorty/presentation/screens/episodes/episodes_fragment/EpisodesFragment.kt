@@ -117,7 +117,10 @@ class EpisodesFragment : Fragment() {
     }
 
     private fun performSearchEvent(query: String) {
-//        vm.getEpisodes(name = query, episode = episode)
+        vm.getEpisodeByParams(
+            name = vm.filteredTrigger.value.getValue("query"),
+            episode = vm.filteredTrigger.value.getValue("episode"),
+        )
     }
 
     private fun initRecyclerView() {

@@ -134,7 +134,11 @@ class LocationsFragment : Fragment() {
     }
 
     private fun performSearchEvent(query: String) {
-//        vm.getEpisodes(name = query, episode = episode)
+        vm.getLocationsByParams(
+            name = vm.filteredTrigger.value?.getValue("query"),
+            type = vm.filteredTrigger.value?.getValue("type"),
+            dimension = vm.filteredTrigger.value?.getValue("dimension"),
+        )
     }
 
     private fun setUpSwipeToRefresh() {

@@ -135,7 +135,13 @@ lateinit var charactersViewModelProvider: CharactersViewModelProvider
     }
 
     private fun performSearchEvent(query: String) {
-//        vm.getEpisodes(name = query, episode = episode)
+        vm.getCharactersByParams(
+            name = query,
+            gender = vm.filteredTrigger.value.getValue("gender"),
+            status = vm.filteredTrigger.value.getValue("status"),
+            species = vm.filteredTrigger.value.getValue("species"),
+            type = vm.filteredTrigger.value.getValue("type")
+        )
     }
 
 
