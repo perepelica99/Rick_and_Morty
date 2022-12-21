@@ -118,7 +118,7 @@ class EpisodesFragment : Fragment() {
 
     private fun performSearchEvent(query: String) {
         vm.getEpisodeByParams(
-            name = vm.filteredTrigger.value.getValue("query"),
+            name = query,
             episode = vm.filteredTrigger.value.getValue("episode"),
         )
     }

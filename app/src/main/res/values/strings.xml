@@ -6,7 +6,7 @@
 
     <string name="locations">Locations</string>
     <string name="episodes_item">ep.1:</string>
-    <string name="search_character">Search Character</string>
+    <string name="search_character">Поиск по персонажам</string>
     <string name="reset">reset</string>
     <string name="human">Human</string>
     <string name="rick_sanchez">Rick Sanchez</string>
@@ -44,9 +44,9 @@
     <string name="select_series">Select series</string>
     <string name="select_type">Select type</string>
     <string name="select_dimension">Select dimension</string>
-    <string name="search_episode">Search Episode</string>
-    <string name="search_location">Search Location</string>
-    <string name="character_name">Character name</string>
+    <string name="search_episode">Поиск по эпизодам</string>
+    <string name="search_location">Поиск по локациям</string>
+    <string name="character_name">Поиск по персонажам</string>
     <string name="empty"> </string>
 
 </resources>

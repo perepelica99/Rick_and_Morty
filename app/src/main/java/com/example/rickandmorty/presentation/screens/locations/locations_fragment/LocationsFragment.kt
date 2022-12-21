@@ -105,7 +105,18 @@ class LocationsFragment : Fragment() {
             navigator().openLocationsFilterFragment()
         }
 
-//        binding.searchLocations.
+        binding.searchLocations.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                performSearchEvent(query = newText)
+                return false
+            }
+
+        })
+
         observeVM()
     }
 
@@ -135,7 +146,7 @@ class LocationsFragment : Fragment() {
 
     private fun performSearchEvent(query: String) {
         vm.getLocationsByParams(
-            name = vm.filteredTrigger.value?.getValue("query"),
+            name = query,
             type = vm.filteredTrigger.value?.getValue("type"),
             dimension = vm.filteredTrigger.value?.getValue("dimension"),
         )
