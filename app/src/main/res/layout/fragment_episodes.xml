@@ -32,30 +32,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/episodes_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/distance_vertical"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:text="@string/episodes"
-        android:textColor="@color/white_yellow"
-        android:textSize="@dimen/label_size"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_episodes" />
-
-    <TextView
-        android:id="@+id/reset_characters"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:layout_marginEnd="@dimen/distance_vertical"
-        android:text="@string/reset"
-        android:textColor="@color/white_blue"
-        android:textSize="@dimen/label_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_filter_episodes" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_episodes"
@@ -64,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/episodes_label">
+        app:layout_constraintTop_toBottomOf="@+id/search_episodes">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_episodes"

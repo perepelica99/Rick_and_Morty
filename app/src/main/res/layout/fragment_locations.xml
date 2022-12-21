@@ -36,30 +36,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/locations_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/distance_vertical"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:text="@string/locations"
-        android:textColor="@color/white_yellow"
-        android:textSize="@dimen/label_size"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_locations" />
-
-    <TextView
-        android:id="@+id/reset_locations"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:layout_marginEnd="@dimen/distance_vertical"
-        android:text="@string/reset"
-        android:textColor="@color/white_blue"
-        android:textSize="@dimen/label_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_filter_locations" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_locations"
@@ -68,7 +44,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locations_label">
+        app:layout_constraintTop_toBottomOf="@+id/search_locations">
 
 
         <androidx.recyclerview.widget.RecyclerView

@@ -32,31 +32,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/characters_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/distance_vertical"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:text="@string/characters"
-        android:textColor="@color/white_yellow"
-        android:textSize="@dimen/label_size"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_character" />
-
-    <TextView
-        android:id="@+id/reset_characters"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/distance_vertical"
-        android:layout_marginEnd="@dimen/distance_vertical"
-        android:text="@string/reset"
-        android:textColor="@color/white_blue"
-        android:textSize="@dimen/label_size"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_filter_charter" />
-
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_characters"
         android:layout_width="@dimen/zero"
@@ -64,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/characters_label">
+        app:layout_constraintTop_toBottomOf="@+id/search_character">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_characters"
