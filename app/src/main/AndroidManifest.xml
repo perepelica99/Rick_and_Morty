@@ -8,20 +8,26 @@
     <application
         android:name=".di.App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App.Starting">
-        <activity
-            android:name=".presentation.RootActivity"
-            android:theme="@style/Theme.App.Starting"
+        android:theme="@style/Theme.RickAndMorty">
+
+        <activity android:name=".presentation.SplashActivity"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.RootActivity"
+            android:theme="@style/Theme.RickAndMorty"
+            android:exported="true">
         </activity>
     </application>
 

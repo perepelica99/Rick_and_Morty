@@ -3,7 +3,6 @@ package com.example.rickandmorty.presentation
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.fragment.app.FragmentManager
 import androidx.paging.ExperimentalPagingApi
 import com.example.rickandmorty.R
@@ -23,16 +22,10 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 @ExperimentalPagingApi
 class RootActivity : AppCompatActivity(), Navigator {
 
-    private val vm: SplashScreenViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        installSplashScreen().apply {
-            setKeepOnScreenCondition {
-                vm.isLoading.value
-            }
-        }
         setContentView(R.layout.activity_root)
 
         if (savedInstanceState == null) {
