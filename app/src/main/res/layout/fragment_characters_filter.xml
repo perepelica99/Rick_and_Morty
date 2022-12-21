@@ -23,20 +23,13 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/filter_status"
-            android:textColor="@color/white_blue"
-            android:textSize="@dimen/label_size"
-            android:textStyle="bold" />
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/status_filter_characters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/filter_vertical"
+            android:layout_marginTop="35dp"
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
@@ -56,23 +49,15 @@
 
         </com.google.android.material.chip.ChipGroup>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/distance_vertical"
-            android:text="@string/gender"
-            android:textColor="@color/white_blue"
-            android:textSize="@dimen/label_size"
-            android:textStyle="bold" />
+
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/gender_filter_characters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/distance_vertical"
+            android:layout_marginTop="8dp"
             app:singleSelection="true">
-
             <com.google.android.material.chip.Chip
                 android:id="@+id/filter_gender_female"
                 style="@style/ChipStyle"
@@ -101,7 +86,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/distance_vertical"
-            android:background="@drawable/params_btn_background"
+            android:background="@drawable/background_search"
             android:text="@string/choose_the_type_or_subspecies_n_of_the_character"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -112,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/distance_vertical"
-            android:background="@drawable/params_btn_background"
+            android:background="@drawable/background_search"
             android:text="@string/choose_the_species_nof_the_character"
             android:textAllCaps="false"
             app:backgroundTint="@null" />
@@ -127,9 +112,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/filter_top_distance"
         android:layout_marginBottom="@dimen/distance_vertical"
-        android:background="@drawable/filter_btn_background"
+        android:background="@drawable/background_button"
         android:text="@string/apply"
-        android:textColor="@color/black"
+        android:textColor="@color/green_bg"
         app:backgroundTint="@null" />
 
 </LinearLayout>

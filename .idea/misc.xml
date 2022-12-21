@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/background_button.xml" value="0.187" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/background_search.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/episodes_nav_menu.xml" value="0.187" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/filter_btn_background.xml" value="0.184" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_female.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_launcher_background.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.187" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_male.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/ic_unknown.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/item_arrow.xml" value="0.187" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/drawable/location_nav_menu.xml" value="0.187" />
@@ -18,6 +23,8 @@
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/layout/fragment_characters_filter.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/layout/fragment_episodes_filter.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/layout/fragment_location_details.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/layout/item_characters.xml" value="0.33" />
+        <entry key="..\:/Users/danek/StudioProjects/Rick_and_Morty/app/src/main/res/menu/bottom_menu.xml" value="0.24635416666666668" />
       </map>
     </option>
   </component>

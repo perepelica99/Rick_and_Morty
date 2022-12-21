@@ -2,22 +2,22 @@
 <resources>
 
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_500">#92344E41</color>
+    <color name="purple_700">#92344E41</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="splash_screen">#344e41</color>
-    <color name="light_pink">#FF74E5</color>
-    <color name="light_beige">#FFEF7C</color>
+    <color name="light_pink">#dad7cd</color>
+    <color name="light_beige">#a3b18a</color>
     <color name="blue">#1100FF</color>
     <color name="orange">#FF5900</color>
     <color name="yellow">#E6D0FF00</color>
-    <color name="light_yellow">#E6FFC869</color>
-    <color name="pink">#E6C800FF</color>
+    <color name="light_yellow">#a3b18a</color>
+    <color name="pink">#dad7cd</color>
     <color name="white_yellow">#F4F3D7</color>
-    <color name="white_blue">#A3B2FB</color>
+    <color name="white_blue">#dad7cd</color>
     <color name="card_color">#a3b18a</color>
     <color name="back_btn">#C12B4729</color>
     <color name="gray_pink">#9C8F759E</color>

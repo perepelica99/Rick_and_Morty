@@ -16,15 +16,17 @@
         <ImageView
             android:id="@+id/character_image"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:scaleType="center"
-            android:src="@drawable/ic_loading" />
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_loading"
+            />
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/card_color"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -38,7 +40,7 @@
                 android:layout_marginEnd="@dimen/item_horizontal_distance"
                 android:layout_marginBottom="@dimen/item_vertical_distance"
                 android:text="@string/rick_sanchez"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/item_name"
                 android:textStyle="bold" />
 
@@ -51,7 +53,7 @@
                 android:layout_marginEnd="@dimen/item_horizontal_distance"
                 android:layout_marginBottom="@dimen/item_vertical_distance"
                 android:text="@string/human"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/add_info_item" />
 
             <TextView
@@ -63,7 +65,7 @@
                 android:layout_marginEnd="@dimen/item_horizontal_distance"
                 android:layout_marginBottom="@dimen/item_vertical_distance"
                 android:text="@string/alive"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="@dimen/add_info_item" />
 
         </LinearLayout>
