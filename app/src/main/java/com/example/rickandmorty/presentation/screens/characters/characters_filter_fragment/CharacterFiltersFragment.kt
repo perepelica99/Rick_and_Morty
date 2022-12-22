@@ -115,15 +115,15 @@ class CharacterFiltersFragment : BottomSheetDialogFragment() {
         val typesArr = params.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Characters species")
+            .setTitle("Выберите вид персонажа")
             .setSingleChoiceItems(typesArr, 0, null)
-            .setPositiveButton("Confirm") { dialog, _ ->
+            .setPositiveButton("Применить") { dialog, _ ->
                 dialog.dismiss()
                 val selectedPosition = (dialog as AlertDialog).listView.checkedItemPosition
                 if(typesArr.isNotEmpty()){ species = typesArr[selectedPosition] }
 
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Отмена", null)
             .show()
     }
 
@@ -131,15 +131,15 @@ class CharacterFiltersFragment : BottomSheetDialogFragment() {
         val typesArr = params.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Characters types")
+            .setTitle("Выберите тип персонажа")
             .setSingleChoiceItems(typesArr, 0, null)
-            .setPositiveButton("Confirm") { dialog, _ ->
+            .setPositiveButton("Применить") { dialog, _ ->
                 dialog.dismiss()
                 val selectedPosition = (dialog as AlertDialog).listView.checkedItemPosition
                 if(typesArr.isNotEmpty()){ type = typesArr[selectedPosition] }
 
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Отмена", null)
             .show()
     }
 }

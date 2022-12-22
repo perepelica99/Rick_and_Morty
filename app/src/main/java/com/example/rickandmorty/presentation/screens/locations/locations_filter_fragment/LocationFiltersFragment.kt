@@ -89,15 +89,15 @@ class LocationFiltersFragment : BottomSheetDialogFragment() {
         val typesArr = params.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Location types")
+            .setTitle("Выберите тип локации")
             .setSingleChoiceItems(typesArr, 0, null)
-            .setPositiveButton("Confirm") { dialog, _ ->
+            .setPositiveButton("Применить") { dialog, _ ->
                 dialog.dismiss()
                 val selectedPosition = (dialog as AlertDialog).listView.checkedItemPosition
                 Log.e("checkedItem", "$selectedPosition");
                 if(typesArr.isNotEmpty()){ type = typesArr[selectedPosition] }
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Отмена", null)
             .show()
     }
 
@@ -105,16 +105,16 @@ class LocationFiltersFragment : BottomSheetDialogFragment() {
         val typesArr = params.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Dimensions types")
+            .setTitle("Выберите измерение")
             .setSingleChoiceItems(typesArr, 0, null)
-            .setPositiveButton("Confirm") { dialog, _ ->
+            .setPositiveButton("Применить") { dialog, _ ->
                 dialog.dismiss()
                 val selectedPosition = (dialog as AlertDialog).listView.checkedItemPosition
                 Log.e("checkedItem", "$selectedPosition");
                 if(typesArr.isNotEmpty()){ dimension = typesArr[selectedPosition] }
 
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Отмена", null)
             .show()
     }
 }

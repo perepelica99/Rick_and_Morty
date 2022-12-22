@@ -70,16 +70,16 @@ class EpisodeFiltersFragment : BottomSheetDialogFragment() {
         val typesArr = params.toTypedArray()
 
         AlertDialog.Builder(requireContext())
-            .setTitle("Episodes")
+            .setTitle("Выберите эпизод")
             .setSingleChoiceItems(typesArr, 0, null)
-            .setPositiveButton("Confirm") { dialog, _ ->
+            .setPositiveButton("Применить") { dialog, _ ->
                 dialog.dismiss()
                 val selectedPosition = (dialog as AlertDialog).listView.checkedItemPosition
                 Log.e("checkedItem", "$selectedPosition");
                 if(typesArr.isNotEmpty()){ episode = typesArr[selectedPosition] }
 
             }
-            .setNegativeButton("Cancel", null)
+            .setNegativeButton("Отмена", null)
             .show()
     }
 }
