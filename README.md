@@ -57,5 +57,7 @@ CharactersFragment, LocationsFragment и EpisodesFragment
 
 В момент загрузки данных отображается прогресс-индикатор.
 
+В приложении используется Dagger2, Coroutines, реализована CleanArchitecture
+
 
 
