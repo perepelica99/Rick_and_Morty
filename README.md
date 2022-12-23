@@ -59,5 +59,8 @@ CharactersFragment, LocationsFragment и EpisodesFragment
 
 В приложении используется Dagger2, Coroutines, реализована CleanArchitecture
 
-
+---Для приложения сделан unit test GetLocationPresentationMapperTest, проверяющий работу метода Mapper. 
+Под аннотацией @Before происходит инициализация объектов,
+@Test - происходит проверка значений,
+@After - происходит освобождение ресурсов
 
