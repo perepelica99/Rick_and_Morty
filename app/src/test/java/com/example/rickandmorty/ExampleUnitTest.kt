@@ -1,5 +1,6 @@
 package com.example.rickandmorty
 
+import com.example.rickandmorty.domain.models.episode.EpisodeModel
 import org.junit.Test
 
 import org.junit.Assert.*
