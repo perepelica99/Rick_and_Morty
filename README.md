@@ -1,5 +1,7 @@
 Техническое задание для курсового проекта
 
+В проекте присутствует файл APK в формате release
+
 ---Splash Screen---
 В качестве фона для темы Splash Screen Activity установлен файл с логотипом приложения splash_screen_bg.xml,
 расположенный в drawable. Класс SplashActivity установлен как главный и перенаправляет в основное RootActivity.
@@ -22,7 +24,7 @@ CharactersFragment, LocationsFragment и EpisodesFragment
 Каждый элемент списка содержит название локации(name), тип (type) и измерение (dimension).
 имеет SearchView с поиском по названию локаций.
 
-Фильтры доступны из фрагментов CharactersFragment, LocationsFragment и EpisodesFragment, реализованы с помощью BottomSheetDialogFragment. Содержит кнопку
+Фильтры доступны из фрагментов LocationsFragment и EpisodesFragment, реализованы с помощью BottomSheetDialogFragment. Содержит кнопку
 "Применить", при нажатии происходит применение фильтров, сброс экрана и отображение нового экрана с примененными параметрами.
 
 ---Фрагменты с деталями:---
@@ -51,7 +53,8 @@ CharactersFragment, LocationsFragment и EpisodesFragment
 кэшированных данных из базы данных в пользовательский интерфейс. Room используется с несколькими таблицами (Multiple Tables)
 Для поиска используются запросы в БД с помощью SearchView.
 
-Приложение поддерживает навигацию назад. На всех экранах, кроме главного, отображается стрелка назад.
+В приложении работает навигация назад. Присутствует кнопка back на фрагментах CharactersFragment, LocationsFragment и EpisodesFragment. При нажатии кнопки back 
+на главном экране происходит выход из приложения.
 
 Все вкладки поддерживают Pull-to-Refresh реализованный с помощью SwipeRefreshLayout widget
 
